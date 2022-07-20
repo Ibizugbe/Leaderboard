@@ -4,3 +4,4 @@ import { displayLeaderScores } from "./modules/addScore";
 
 const submitBtn = document.querySelector("#submit");
 displayLeaderScores;
+submitBtn.addEventListener("click", displayLeaderScores);
