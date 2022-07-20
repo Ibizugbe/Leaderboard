@@ -4,9 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>webpack template</title>
+    <title>Leaderboard</title>
   </head>
   <body>
-    <h1>Hello webpack</h1>
+    <header></header>
+    <main>
+      <section>
+        <h1>Leaderboard</h1>
+        <div class="container">
+          <div class="scores">
+            <div>
+              <h2 class="header">Recent Scores</h2>
+              <input type="button" value="Refresh" />
+            </div>
+            <ul class="leader-scores"></ul>
+          </div>
+          <div class="inputs">
+            <form action="">
+              <h2>Add your scores</h2>
+              <input
+                type="text"
+                name="user_name"
+                id="user_name"
+                placeholder="Your name"
+                class="input-field"
+              />
+              <input
+                type="number"
+                name="user_score"
+                id="user_score"
+                placeholder="Your score"
+                class="input-field"
+              />
+              <input
+                type="button"
+                value="Submit"
+                class="input-field"
+                id="submit"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
   </body>
 </html>

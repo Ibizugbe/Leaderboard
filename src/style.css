@@ -1,7 +1,23 @@
-.hello {
-  color: red;
+/* .container {
+  display: flex;
+  justify-content: space-between;
 }
 
-body {
-  background-color: bisque;
+.header {
+  display: inline;
 }
+
+.input-field {
+  display: block;
+  margin-top: 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 10px;
+  border: 1px solid;
+}
+
+.scores {
+  padding-left: 5px;
+} */
