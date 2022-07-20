@@ -1,6 +1,12 @@
 .container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+}
+
+.page-header {
+  text-align: center;
+  font-size: 35px;
 }
 
 .header {
@@ -12,6 +18,10 @@
   margin-top: 15px;
 }
 
+h2 {
+  margin: 0;
+}
+
 ul {
   list-style-type: none;
   padding: 10px;
@@ -19,5 +29,14 @@ ul {
 }
 
 .scores {
-  padding-left: 5px;
+  padding-right: 50px;
+}
+
+.refresh {
+  margin-left: 10px;
+}
+
+.submit {
+  display: flex;
+  justify-content: end;
 }
