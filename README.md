@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# To Do List
+# Leaderboard
 
 > This software is used to keep track record of your previous highscores
 
