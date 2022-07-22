@@ -3,10 +3,9 @@ import _ from 'lodash';
 import './style.css';
 import getData from './modules/getLeaderData';
 import submitScore from './modules/addLeaderScores';
-getData()
+
+getData();
 const submitBtn = document.querySelector('#submit');
 const refreshBtn = document.querySelector('.refresh');
 submitBtn.addEventListener('click', submitScore);
 refreshBtn.addEventListener('click', getData);
-
-  
