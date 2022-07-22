@@ -16,59 +16,60 @@
     <header></header>
     <main>
       <section>
-        <div class="container-fluid">
-          <h1 class="text-primary">Leaderboard</h1>
-          <div class="row">
-            <div class="col-6">
+        <div class="container-fluid px-lg-5 px-md-2 px-2 pt-5">
+          <h1 class="text-primary text-center">Leaderboard</h1>
+          <div class="row px-lg-5 pt-5">
+            <div class="col-6 ps-lg-5">
               <div class="row">
-                <div class="col-6">
-                  <h5 class="h5">Recent-scores</h5>
+                <div class="col-6 d-flex align-items-center">
+                  <h5 class="h5 m-0">Recent scores</h5>
                 </div>
-                <div class="col-6">
-                  <button class="btn">Refresh</button>
+                <div class="col-6 d-flex justify-content-end">
+                  <button class="btn refresh">Refresh</button>
                 </div>
               </div>
-              <div class="row">
+              <div class="row pt-3">
                 <div class="col-12">
-                  <table class="table table-striped">
+                  <table
+                    class="table table-striped table-dark table-hover score-table"
+                  >
                     <thead>
                       <tr>
-                        <th scope="col">#</th>
                         <th scope="col">User name</th>
                         <th scope="col">Score</th>
                       </tr>
                     </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                      </tr>
+                    <tbody class="leader-scores">
+                      <!-- js -->
                     </tbody>
                   </table>
                 </div>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 pe-lg-5">
               <h5>Add your score</h5>
-              <form>
+              <form class="p-0 pt-4 col-lg-7 flex-nowrap">
                 <div class="form-group">
                   <input
                     type="text"
-                    class="form-control user_name"
+                    class="form-control"
                     placeholder="Enter yor name"
+                    id="user_name"
                   />
                 </div>
                 <div class="form-group">
                   <input
-                    type="text"
-                    class="form-control user_name"
+                    type="number"
+                    id="user_score"
+                    class="form-control"
                     placeholder="Enter yor score"
                   />
                 </div>
-                <button type="submit" class="btn btn-primary" id="submit">
-                  Submit
-                </button>
+                <div class="d-flex justify-content-end">
+                  <button type="submit" class="btn btn-secondary" id="submit">
+                    Submit
+                  </button>
+                </div>
               </form>
             </div>
           </div>
