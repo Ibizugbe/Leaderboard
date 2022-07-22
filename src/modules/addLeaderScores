@@ -1,0 +1,26 @@
+let userName = document.querySelector('#user_name');
+let userScore = document.querySelector('#user_score');
+
+const submitScore = async () => {
+  let playerName = userName.value;
+  let playerScore = userScore.value;
+  const url =
+    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/TbdiYbfHzwwkCxXBqVhv/scores/';
+
+  if (playerName !== "" && playerScore !== '') {
+    await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        user: playerName,
+        score: playerScore,
+      }),
+    });
+  }
+  userName.value = "";
+  userScore.value = "";
+};
+
+export default submitScore;
