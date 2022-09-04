@@ -10,10 +10,6 @@
 - Frameworks
 - Webpack, webhint, stylelint and eslint.
 
-## Live Demo
-
-[See webpage here](https://ibizugbe.github.io/Leaderboard/)
-
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
