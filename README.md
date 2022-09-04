@@ -28,36 +28,12 @@ To get a local copy up and running follow these simple example steps.
 
 ### Install
 
-initialise npm to create package.json file
+`npm install`
 
-```
-npm init -y
-```
+### Run Project
 
-To install webhint Run
+`npm start`
 
-```
-npm install --save-dev hint@7.x
-```
-
-To install stylelint Run
-
-```
-npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-```
-
-To install eslint Run
-
-```
-npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
-```
-
-### Run tests
-
-`npx hint .`
-`npx eslint .`
-`npx stylelint "**/*.{css,scss}"`
-to check for webhint, eslint and style lint errors
 
 ## Authors
 
